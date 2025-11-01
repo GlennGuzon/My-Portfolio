@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2a0a0a 0%, #5c1a1a 100%);
+    color: #f0f0f0;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(44, 11, 11, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 30px;
+    border: 1px solid #8b2a2a;
+}
+
+/* Ung header nya */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #8b2a2a;
+}
+
+h1 {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* intoduction */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(139, 42, 42, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #8b2a2a;
+}
+
+.profile-container {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6b6b;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.intro-text {
+    text-align: center;
+    max-width: 600px;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* about me naman */
+.about-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(139, 42, 42, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #8b2a2a;
+}
+
+.about-section h2 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(139, 42, 42, 0.3);
+    border-radius: 5px;
+    border-left: 3px solid #ff6b6b;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #ff9e9e;
+    min-width: 100px;
+}
+
+.info-value {
+    color: #f0f0f0;
+}
+
+/* skills tas hobby */
+.skills-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(139, 42, 42, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #8b2a2a;
+}
+
+h2 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-item {
+    background: linear-gradient(135deg, #8b2a2a 0%, #ff6b6b 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ff6b6b 0%, #8b2a2a 100%);
+}
+
+/* my favorite web dxomark */
+.inspiration-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(139, 42, 42, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #8b2a2a;
+}
+
+.inspiration-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #8b2a2a 0%, #ff6b6b 100%);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inspiration-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ff6b6b 0%, #8b2a2a 100%);
+}
+
+/* footer nya to */
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid #8b2a2a;
+    color: #b8b8b8;
+}
+
+/* animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease forwards;
+}
+
+/* design */
+@media (min-width: 768px) {
+    .intro-section {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .profile-container {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+    
+    .intro-text {
+        text-align: left;
+    }
+    
+    .about-content {
+        flex-direction: row;
+    }
+    
+    .about-text {
+        flex: 2;
+    }
+    
+    .personal-info {
+        flex: 1;
+        grid-template-columns: 1fr;
+    }
+    
+    .info-item {
+        flex-direction: column;
+    }
+    
+    .info-label {
+        min-width: auto;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
